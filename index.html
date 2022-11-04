@@ -28,19 +28,32 @@
             text-align: justify;
             text-justify: inter-word;
         }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        body {
+            position: relative;
+            min-height: 100%;
+            min-height: 100vh;
+        }
+        footer {
+            position: absolute;
+            right: 0;bottom:0;left:0;
+        }
     </style>
     <title>AAS Law</title>
 </head>
 <body style="background-color:bisque;">
-    <nav class="sticky-top">
-        <nav class="bg-dark text-white navpad">
-            <a href="tel://+639981234567"><button type="button" class="btn btn-light btn-sm">Contact Us</button></a>
-            <a href="mailto:aaslaw@gmail.com"><button type="button" class="btn btn-light btn-sm">EMAIL</button></a>
-            <a class="float-end marginright" href="https://www.facebook.com"><img src="assets/images/fb.png" alt="facebook" style="width:25px;height:25px;"></a>
-            <a class="float-end marginright" href="https://www.youtube.com"><img src="assets/images/yt.png" alt="youtube" style="width:25px;height:25px;"></a>
-            <a class="float-end marginright" href="https://www.linkedin.com"><img src="assets/images/li.png" alt="linkedin" style="width:25px;height:25px;"></a>
-            <a class="float-end marginright" href="https://www.twitter.com"><img src="assets/images/twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
-        </nav>
+    <nav class="bg-dark text-white navpad sticky-top">
+        <a href="mailto:aaslaw@gmail.com"><button type="button" class="btn btn-light btn-sm">EMAIL</button></a>
+        <a class="float-end marginright" href="https://www.linkedin.com"><img src="assets/images/li.png" alt="linkedin" style="width:25px;height:25px;"></a>
+        <a class="float-end marginright" href="https://www.youtube.com"><img src="assets/images/yt.png" alt="youtube" style="width:25px;height:25px;"></a>
+        <a class="float-end marginright" href="https://www.twitter.com"><img src="assets/images/twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+        <a class="float-end marginright" href="https://www.facebook.com"><img src="assets/images/fb.png" alt="facebook" style="width:25px;height:25px;"></a>
+        <a href="tel://+639981234567"><button type="button" class="btn btn-light btn-sm">Contact Us</button></a>
     </nav>
     <div class="bg">
         <nav class="navbar navbar-expand-sm">
@@ -65,7 +78,7 @@
                             <button type="button" data-bs-target="#lawcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#lawcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner center">
                           <div class="carousel-item active">
                             <img src="assets/images/carousel/car004.jpg" class="d-block w-100" alt="slide004">
                           </div>
